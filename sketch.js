@@ -6,8 +6,13 @@ const settings = {
 
 const sketch = () => {
   return ({ context, width, height }) => {
-    context.fillStyle = 'white';
+    context.fillStyle = 'rebeccapurple';
     context.fillRect(0, 0, width, height);
+
+    context.beginPath();
+    context.arc(width / 2, height / 2, 300, 0, Math.PI * 2, false);
+    context.fillStyle = 'red';
+    context.fill();
   };
 };
 
